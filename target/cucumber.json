@@ -1,0 +1,106 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-10-09T06:55:43.788Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2249000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefs.Hooks.Setup()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "To Add two numbers",
+        "description": "",
+        "id": "this-feature-would-be-creating-a-calculator-for-add-and-subtract;to-add-two-numbers",
+        "after": [
+          {
+            "result": {
+              "duration": 156000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefs.Hooks.TearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I have a calculator",
+            "match": {
+              "location": "stepdefs.CalculatorStepDef.i_have_a_calculator()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I add 4 and 5",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 6
+                },
+                {
+                  "val": "5",
+                  "offset": 12
+                }
+              ],
+              "location": "stepdefs.CalculatorStepDef.i_add_and(int,int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 8000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I should get the result as 9",
+            "match": {
+              "arguments": [
+                {
+                  "val": "9",
+                  "offset": 27
+                }
+              ],
+              "location": "stepdefs.CalculatorStepDef.i_should_get_the_result_as(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sanity"
+          },
+          {
+            "name": "@WIP"
+          }
+        ]
+      }
+    ],
+    "name": "This feature would be creating a calculator for Add and Subtract",
+    "description": "",
+    "id": "this-feature-would-be-creating-a-calculator-for-add-and-subtract",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/Calculator.feature",
+    "tags": []
+  }
+]
